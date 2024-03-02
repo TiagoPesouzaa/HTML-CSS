@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+</head>
+
+<body>
+<h1> <i>Será que você é fora de série ? </i> </h1>
+
+    Valor Nota 1: 
+<input id="input_valor_1">
+<br>
+
+Valor Nota 2:
+<input id="input_valor_2">
+<br>
+
+Valor Nota 3:
+<input id="input_valor_3">
+<br>
+
+<button onclick="desempenho_da_paty()"> Analisar desempenho </button>
+
+<div id="div_media_das_notas"> </div>
+</body>
+
+</html>
+<script>
+
+function desempenho_da_paty(){
+var NOTA_1 = Number(input_valor_1.value)
+var NOTA_2 = Number(input_valor_2.value)
+var NOTA_3 = Number(input_valor_3.value)
+var MEDIA =((NOTA_1 + NOTA_2 + NOTA_3)/ 3)
+
+
+div_media_das_notas.innerHTML = (`Sua média foi de : ${MEDIA}`)
+
+if(MEDIA>9.4){
+    div_media_das_notas.innerHTML += (`<br>Parabéns, você é fora de série !`)
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+</script>
